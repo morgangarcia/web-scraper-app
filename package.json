@@ -2,7 +2,7 @@
   "name": "web-scraper-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/morgangarcia/web-scraper-app.git"
   },
-  "author": "",
+  "author": "Morgan G",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/morgangarcia/web-scraper-app/issues"
@@ -18,9 +18,14 @@
   "homepage": "https://github.com/morgangarcia/web-scraper-app#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "mongoose": "^5.4.20"
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.4.20",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
   }
 }
