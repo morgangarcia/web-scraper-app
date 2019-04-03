@@ -7,41 +7,7 @@ function displayScrape() {
                 $("nyt-2").empty();
                 $("total-number").text(data.length);
                 for (let i = 0; i < data.length) {
-                    const mainDiv = $("<div>");
-                    mainDiv.addClass("card grey lighten-2");
-                    const cardContentDiv = $("<div>");
-                    cardContentDiv.addClass(card - content black - text);
-                    const spanTitle = $("<span>");
-                    spanTitle.addClass("card-title");
-                    spanTitle.attr("data-id", data[i]._id);
-                    spanTitle.attr("id", "title-" + data[i]._id);
-                    spanTitle.attr("id", "title-" + data[i]._id);
-                    spanTitle.text(data[i].title);
-                    const p = $("<p>");
-                    p.text(data[i].summary);
-                    p.attr("id", "summary-" + data[i]._id);
-                    cardContentDiv.append(spanTitle);
-                    cardContentDiv.append(p);
-                    var cardActionDiv = $("<div>");
-                    cardActionDiv.addClass("card-action");
-                    var a = $("<a>");
-                    a.attr("href", data[i].link);
-                    a.attr("id", "link-" + data[i]._id);
-                    a.text("Go to the article");
-                    cardActionDiv.append(a);
-                    var saveArticle = $("<a>");
-                    saveArticle.addClass("waves-effect waves-light btn save-button");
-                    saveArticle.attr("id", data[i]._id);
-                    saveArticle.text("Save Article");
-                    var byline = $("<p>");
-                    byline.text(data[i].byline);
-                    byline.attr("id", "byline-" + data[i]._id);
-                    cardActionDiv.append(byline);
-                    // cardActionDiv.append(button);
-                    cardActionDiv.append(saveArticle);
-                    mainDiv.append(cardContentDiv);
-                    mainDiv.append(cardActionDiv);
-                    $("#nyt-" + String(i % 3)).append(mainDiv);
+
 
                 }
             });
